@@ -25,6 +25,7 @@ namespace PRN02
             services.AddControllersWithViews();
             services.AddRazorPages();
 
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,10 +48,11 @@ namespace PRN02
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapRazorPages();
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
+                
             });
         }
     }

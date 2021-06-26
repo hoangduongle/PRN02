@@ -163,3 +163,4 @@ D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_V
 D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\PRN02.csproj.AssemblyReference.cache
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Areas\Identity\Pages\ViewLoginPage.cshtml.g.cs
