@@ -17,6 +17,7 @@ using PRN02.Areas.Identity.Data;
 
 namespace PRN02.Areas.Identity.Pages.Account
 {
+    
     [AllowAnonymous]
     public class RegisterModel : PageModel
     {
@@ -83,6 +84,7 @@ namespace PRN02.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
+        
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
