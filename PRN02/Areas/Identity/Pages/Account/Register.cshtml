@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
@@ -16,7 +16,7 @@
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <span class="input-group-text"></span>
                         </div>
                         <input asp-for="Input.FirstName" class="form-control" placeholder="FirstName..." />
                         <span asp-validation-for="Input.FirstName" class="text-danger"></span>
@@ -24,7 +24,7 @@
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <span class="input-group-text"></span>
                         </div>
                         <input asp-for="Input.LastName" class="form-control" placeholder="LastName..." />
                         <span asp-validation-for="Input.LastName" class="text-danger"></span>
@@ -32,7 +32,7 @@
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <span class="input-group-text"></span>
                         </div>
                         <input asp-for="Input.Email" class="form-control" placeholder="Email...">
                         <span asp-validation-for="Input.Email" class="text-danger"></span>
@@ -40,14 +40,14 @@
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"></span>
                         </div>
                         <input asp-for="Input.Password" class="form-control" placeholder="password">
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <span class="input-group-text"></span>
                         </div>
                         <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirm Pass..." />
                         <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
