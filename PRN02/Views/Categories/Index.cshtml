@@ -1,0 +1,55 @@
+﻿@model IEnumerable<PRN02.Models.Category>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        th {
+             color: aquamarine;
+        }
+        td{
+            color: goldenrod;
+        }
+        a{
+            color: wheat;
+            text-decoration: none;
+        }
+
+    </style>
+    </head>
+    <body>
+        <a href="/Categories/Create">Create</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">CategoryID</th>
+                    <th scope="col">Category Name</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row" style="color: goldenrod">@item.CategoryID</th>
+                        <td>@item.CategoryName</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.CategoryID">Edit</a> |                                                    
+                        </td> 
+                        <td>
+                            <a asp-action="Details" asp-route-id="@item.CategoryID">Details</a> |
+                        </td>
+                        <td>
+                            <a asp-action="Delete" asp-route-id="@item.CategoryID">Delete</a>
+                        </td>
+                    </tr>
+                }               
+            </tbody>
+        </table>
+    </body>
+</html> 

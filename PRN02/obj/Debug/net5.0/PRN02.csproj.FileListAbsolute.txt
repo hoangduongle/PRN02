@@ -164,3 +164,12 @@ D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_V
 D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\PRN02.csproj.AssemblyReference.cache
 D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Areas\Identity\Pages\ViewLoginPage.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Categories\Create.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Product\Create.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Product\Edit.cshtml.g.cs
+D:\semester 5\C#\Assignment\PRN02\obj\Debug\net5.0\Razor\Views\Product\Report.cshtml.g.cs
