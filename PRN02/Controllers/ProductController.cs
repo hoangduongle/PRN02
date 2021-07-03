@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PRN02.Controllers
 {
-    [Authorize] 
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly DBImportManagementContext _context;
@@ -18,6 +18,7 @@ namespace PRN02.Controllers
         {
             _context = context;
         }
+        //testttt
         public IActionResult Index()
         {
             var ListProduct = from p in _context.Products
