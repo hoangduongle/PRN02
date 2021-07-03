@@ -51,7 +51,8 @@ namespace PRN02.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (ProductExists(product.ProductID)){
+                if (ProductExists(product.ProductID))
+                {
                     return RedirectToAction(nameof(Index));
                 }
                 _context.Products.Add(product);
@@ -63,12 +64,12 @@ namespace PRN02.Controllers
         //Get Details
         public IActionResult Details(int? id)
         {
-            if(id == null)
+            if (id == null)
             {
                 return NotFound();
             }
             Product p = _context.Products.Find(id);
-            if(p == null)
+            if (p == null)
             {
                 return NotFound();
             }
@@ -88,7 +89,7 @@ namespace PRN02.Controllers
                 return NotFound();
             }
             ViewData["CateID"] = new SelectList(_context.Categories, "CategoryID", "CategoryName", p.CateID);
-            
+
             return View(p);
         }
 
@@ -110,7 +111,7 @@ namespace PRN02.Controllers
                 p.CategoryID = product.CategoryID;
                 _context.Products.Update(p);
                 _context.SaveChanges();
-            }                    
+            }
             return RedirectToAction(nameof(Index));
         }
 
@@ -124,7 +125,7 @@ namespace PRN02.Controllers
         }
 
         //GET List Report sort by Date
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         public IActionResult Report()
         {
             var ListReport = from p in _context.Products
@@ -136,9 +137,9 @@ namespace PRN02.Controllers
         //POST Report
         [Authorize(Roles = "Admin")]
         public IActionResult Sort(DateTime SmallDate, DateTime BigDate)
-        { 
+        {
             var ListReport = _context.Products.Where(p => p.DateIn >= SmallDate && p.DateIn < BigDate).ToList();
-            return View("Report",ListReport);
+            return View("Report", ListReport);
         }
 
         private bool ProductExists(int id)

@@ -21,15 +21,12 @@
     </style>
     </head>
     <body>
-        <a href="/Categories/Create">Create</a>
+        <a href="/Categories/Create">Add Product to Repository</a>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">CategoryID</th>
                     <th scope="col">Category Name</th>
-                    <th scope="col">Edit</th>
-                    <th scope="col">Details</th>
-                    <th scope="col">Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,12 +38,6 @@
                         <td>
                             <a asp-action="Edit" asp-route-id="@item.CategoryID">Edit</a> |                                                    
                         </td> 
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.CategoryID">Details</a> |
-                        </td>
-                        <td>
-                            <a asp-action="Delete" asp-route-id="@item.CategoryID">Delete</a>
-                        </td>
                     </tr>
                 }               
             </tbody>
