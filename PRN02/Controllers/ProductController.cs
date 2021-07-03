@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace PRN02.Controllers
 {
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly DBImportManagementContext _context;
