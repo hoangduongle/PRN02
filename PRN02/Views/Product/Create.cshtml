@@ -27,47 +27,49 @@
     </style>
 </head>
 <body>
-    <h1>Create</h1>
-
-    <h4>Category</h4>
+    <h3>Add more Products</h3>
     <hr />
     <div class="row">
         <div class="col-md-4">
             <form method="post" action="/Product/Create">
-                <div class="form-group">
-                    <label asp-for="ProductName" class="control-label"></label>
-                    <input name="ProductName" asp-for="ProductName" class="form-control" />
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="ProductName" class="control-label"></label>
+                        <input name="ProductName" asp-for="ProductName" class="form-control" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label asp-for="Quantity" class="control-label"></label>
+                        <input name="Quantity" asp-for="Quantity" class="form-control" />
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label asp-for="Quantity" class="control-label"></label>
-                    <input name="Quantity" asp-for="Quantity" class="form-control" />
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="TotalPrice" class="control-label"></label>
+                        <input name="TotalPrice" asp-for="TotalPrice" class="form-control" />
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label asp-for="DateIn" class="control-label"></label>
+                        <input name="DateIn" asp-for="@DateTime.Now" class="form-control" />
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label asp-for="TotalPrice" class="control-label"></label>
-                    <input name="TotalPrice" asp-for="TotalPrice" class="form-control" />
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <select class="form-select" asp-for="CategoryID">
+                            <option selected>Select Catetory</option>
+                            @foreach (Category cate in ViewBag.Categories)
+                            {
+                                <option value="@cate.CategoryID">@cate.CategoryName</option>
+
+                            }
+                        </select>
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <label asp-for="DateIn" class="control-label"></label>
-                    <input name="DateIn" asp-for="@DateTime.Now" class="form-control" />
-                </div>
-
-              <!--  <div class="form-group">
-                    <label asp-for="CategoryID" class="control-label"></label>
-                    <input name="CategoryID" asp-for="CategoryID" class="form-control" />
-                </div>-->
-
-                <select class="form-select" asp-for="CategoryID">
-                    <option selected>Open this select menu</option> 
-                     @foreach(Category cate in ViewBag.Categories)
-                       {
-                            <option value="@cate.CategoryID">@cate.CategoryName</option>     
-                       }
-                </select>
-
-                <div class="form-group">
+                <div class="form-group text-center">
                     <input type="submit" value="Submit" class="btn btn-primary" />
                 </div>
             </form>

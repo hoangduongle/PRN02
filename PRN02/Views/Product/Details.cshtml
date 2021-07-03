@@ -31,16 +31,48 @@
     <div>
         <h4>Product</h4>
         <hr />
-        <label>ID</label>
-        <p>@Model.ProductID</p>
-        <label>Name</label>
-        <p>@Model.ProductName</p>
-        <label>Quantity</label>
-        <p>@Model.Quantity</p>
-        <label>Date In</label>
-        <p>@Model.DateIn</p>
-        <label>Total Price</label>
-        <p>@Model.TotalPrice</p>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+
+                <label>ID</label>
+                <p>@Model.ProductID</p>
+            </div>
+
+            <div class="form-group col-md-6">
+
+                <label>Name</label>
+                <p>@Model.ProductName</p>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Quantity</label>
+                <p>@Model.Quantity</p>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Date In</label>
+                <p>@Model.DateIn</p>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label>Total Price</label>
+                <p>@Model.TotalPrice</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
     </div>
     <div>
         <a asp-action="Edit" asp-route-id="@Model.ProductID">Edit |</a>
