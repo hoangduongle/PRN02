@@ -6,22 +6,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        th {
-             color: aquamarine;
-        }
-        td{
-            color: goldenrod;
-        }
-        a{
-            color: wheat;
-            text-decoration: none;
-        }
 
-    </style>
     </head>
     <body>
-        <a href="/Categories/Create">Add Product to Repository</a>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -33,10 +20,10 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <th scope="row" style="color: goldenrod">@item.CategoryID</th>
+                        <th scope="row" style="color: black">@item.CategoryID</th>
                         <td>@item.CategoryName</td>
                     </tr>
-                }               
+                }          
             </tbody>
         </table>
     </body>

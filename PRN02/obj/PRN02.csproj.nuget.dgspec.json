@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\semester 5\\C#\\Assignment\\PRN02\\PRN02.csproj": {}
+    "D:\\.FPT University\\.Semester 5\\PRN292\\GIT\\PRN02\\PRN02.csproj": {}
   },
   "projects": {
-    "D:\\semester 5\\C#\\Assignment\\PRN02\\PRN02.csproj": {
+    "D:\\.FPT University\\.Semester 5\\PRN292\\GIT\\PRN02\\PRN02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\semester 5\\C#\\Assignment\\PRN02\\PRN02.csproj",
+        "projectUniqueName": "D:\\.FPT University\\.Semester 5\\PRN292\\GIT\\PRN02\\PRN02.csproj",
         "projectName": "PRN02",
-        "projectPath": "D:\\semester 5\\C#\\Assignment\\PRN02\\PRN02.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\semester 5\\C#\\Assignment\\PRN02\\obj\\",
+        "projectPath": "D:\\.FPT University\\.Semester 5\\PRN292\\GIT\\PRN02\\PRN02.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "D:\\.FPT University\\.Semester 5\\PRN292\\GIT\\PRN02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
